@@ -10,7 +10,7 @@ public class GPSDataConverter {
 	// Eksempel - tidsinformasjon (som String): 2017-08-13T08:52:26.000Z
     // skal omregnes til sekunder (som int): 8 * 60 * 60 + 52 * 60 + 26 
 	
-	private static int TIME_STARTINDEX = 11; // startindex for tidspunkt i timestr
+	private static int TIME_STARTINDEX = 11; // posisjon for start av tidspunkt i timestr
 
 	public static int toSeconds(String timestr) {
 		

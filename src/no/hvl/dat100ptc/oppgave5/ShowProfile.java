@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 public class ShowProfile extends EasyGraphics {
 
-	private static final int MARGIN = 50;		// margin on the sides 
+	private static final int MARGIN = 50;  // margin on the sides 
 	
 	private static int MAXBARHEIGHT = 500; // assume no height above 500 meters
 	
