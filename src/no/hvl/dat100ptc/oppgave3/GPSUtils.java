@@ -44,6 +44,7 @@ public class GPSUtils {
 
 		// TODO - START
 		
+				
 		throw new UnsupportedOperationException(TODO.method());
 		
 		// TODO - SLUTT
