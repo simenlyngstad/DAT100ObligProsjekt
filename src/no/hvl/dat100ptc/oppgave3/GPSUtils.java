@@ -23,12 +23,18 @@ public class GPSUtils {
 	}
 
 	public static double findMin(double[] da) {
-
-		double min;
-
 		// TODO - START
+		double min;
+		
+		min = da[0];
+		
+		for(double d : da) {
+			if(d < min) {
+				min = d;
+			}
+		}
+		return min;
 
-		throw new UnsupportedOperationException(TODO.method());
 
 		// TODO - SLUT
 

@@ -9,8 +9,7 @@ public class GPSData {
 	protected int antall = 0;
 
 	public GPSData(int n) {
-
-		// TODO - START
+		
 		
 		throw new UnsupportedOperationException(TODO.construtor("GPSData"));
 
