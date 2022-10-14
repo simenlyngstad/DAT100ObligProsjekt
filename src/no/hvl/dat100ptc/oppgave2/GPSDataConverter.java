@@ -29,7 +29,7 @@ public class GPSDataConverter {
 		min = Integer.parseInt(minutt);
 		sec = Integer.parseInt(sekunder);
 		
-		secs = 60 * hr + 60 * min + sec;
+		secs = (hr * (60*60)) + (60 * min) + sec;
 
 		return secs;
 		
