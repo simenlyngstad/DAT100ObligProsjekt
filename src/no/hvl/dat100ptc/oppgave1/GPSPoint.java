@@ -59,7 +59,7 @@ public class GPSPoint {
 		// TODO - start
 		
 		str = this.time + " (" + this.latitude + "," +
-		this.longitude + ")" + this.elevation + "\n";
+		this.longitude + ") " + this.elevation + "\n";
 		
 		return str;
 		
