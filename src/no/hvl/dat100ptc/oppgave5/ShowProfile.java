@@ -48,6 +48,7 @@ public class ShowProfile extends EasyGraphics {
 		// ybase indicates the position on the y-axis where the columns should start
 
 		int x = MARGIN, y;
+		setColor(0, 0, 255);
 
 		// TODO - START
 
@@ -56,12 +57,10 @@ public class ShowProfile extends EasyGraphics {
 			drawLine(x, ybase, x, ybase - y);
 			x += 2;
 
-		// TODO - SLUTT
+			// TODO - SLUTT
 
 		}
 
 	}
-
-}
 
 }
