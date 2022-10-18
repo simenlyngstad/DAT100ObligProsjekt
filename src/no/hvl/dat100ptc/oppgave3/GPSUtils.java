@@ -132,40 +132,16 @@ public class GPSUtils {
 		minutter = (secs % 3600) / 60;
 		sekunder = (secs % 3600) % 60;
 
-		timestr = timeFormat(timer) + TIMESEP + timeFormat(minutter) + TIMESEP + timeFormat(sekunder);
+		timestr = "  " + String.format("%02d", timer) + TIMESEP + String.format("%02d", minutter) + TIMESEP
+				+ String.format("%02d", sekunder);
 
-		StringBuilder sb = new StringBuilder();
-
-		for (int i = 0; i < TEXTWIDTH; i++) {
-			sb.append(' ');
-		}
-
-		return sb.substring(timestr.length()) + timestr;
+		return timestr;
 
 		// TODO - SLUTT
 
 	}
 
 	private static int TEXTWIDTH = 10;
-
-	// Gjør tid om til tekst
-
-	public static String timeFormat(int n) {
-
-		String Timeformat;
-
-		if (n < 10) {
-
-			Timeformat = "0" + n;
-			return Timeformat;
-
-		} else {
-
-			Timeformat = Integer.toString(n);
-			return Timeformat;
-
-		}
-	}
 
 	public static String formatDouble(double d) {
 
