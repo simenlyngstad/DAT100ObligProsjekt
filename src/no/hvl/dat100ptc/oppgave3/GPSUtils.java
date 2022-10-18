@@ -1,7 +1,6 @@
 package no.hvl.dat100ptc.oppgave3;
 
 import static java.lang.Math.*;
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import no.hvl.dat100ptc.oppgave1.GPSPoint;
 
@@ -133,7 +132,7 @@ public class GPSUtils {
 		minutter = (secs % 3600) / 60;
 		sekunder = (secs % 3600) % 60;
 
-		timestr = formatTimeNumber(timer) + TIMESEP + formatTimeNumber(minutter) + TIMESEP + formatTimeNumber(sekunder);
+		timestr = timeFormat(timer) + TIMESEP + timeFormat(minutter) + TIMESEP + timeFormat(sekunder);
 
 		StringBuilder sb = new StringBuilder();
 
@@ -151,19 +150,19 @@ public class GPSUtils {
 
 	// Gjør tid om til tekst
 
-	public static String formatTimeNumber(int n) {
+	public static String timeFormat(int n) {
 
-		String FormatTime;
+		String Timeformat;
 
 		if (n < 10) {
 
-			FormatTime = "0" + n;
-			return FormatTime;
+			Timeformat = "0" + n;
+			return Timeformat;
 
 		} else {
 
-			FormatTime = Integer.toString(n);
-			return FormatTime;
+			Timeformat = Integer.toString(n);
+			return Timeformat;
 
 		}
 	}
@@ -176,7 +175,7 @@ public class GPSUtils {
 
 		DecimalFormat df = new DecimalFormat("#.##");
 
-		df.setRoundingMode(RoundingMode.CEILING);
+		Math.round(d);
 		str = df.format(d);
 
 		StringBuilder sb = new StringBuilder();
